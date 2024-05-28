@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div id="displaycontainer">
+          <input readonly class="display" id="display"/>
+        </div>
+        <div id="keys">
+          <button onclick="allClear()" class="key btn operator1 activate">AC</button>
+          <button onclick="deleted()" class="key btn operator1 err">DE</button>
+          <button onclick="appendToDisplay('.')" class="key btn err">.</button>
+          <button onclick="appendToDisplay('/')" class="key operator err">/</button>    
+          <button onclick="appendToDisplay('7')" class="key btn err">7</button>
+          <button onclick="appendToDisplay('8')" class="key btn err">8</button>
+          <button onclick="appendToDisplay('9')" class="key btn err">9</button>
+          <button onclick="appendToDisplay('*')" class="key operator err">*</button>    
+          <button onclick="appendToDisplay('4')" class="key btn err">4</button>
+          <button onclick="appendToDisplay('5')" class="key btn err">5</button>
+          <button onclick="appendToDisplay('6')" class="key btn err">6</button>
+          <button onclick="appendToDisplay('-')" class="key operator err">-</button>    
+          <button onclick="appendToDisplay('1')" class="key btn err">1</button>
+          <button onclick="appendToDisplay('2')" class="key btn err">2</button>
+          <button onclick="appendToDisplay('3')" class="key btn err">3</button>
+          <button onclick="appendToDisplay('+')" class="key operator err">+</button>   
+          <button onclick="appendToDisplay('00')" class="key btn err">00</button>
+          <button onclick="appendToDisplay('0')" class="key btn err">0</button>
+          <button onclick="calculate()" class="key dkey operator err">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
